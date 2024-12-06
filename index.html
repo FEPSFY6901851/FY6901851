@@ -100,7 +100,7 @@
 <h3> 
 <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
-<pre>
+<pre id="Introduction_InText" class="ex1">
   The increasing frequency and severity of wildfires have highlighted the need for better monitoring and response strategies.
   Ground-based and satellite monitoring systems often face limitations in response time and accessibility in large and dense forested areas.
   However, due to the recent advancements in autonomous flight systems and unmanned aerial vehicles (UAV’s) the monitoring of such events is being reshaped.
@@ -112,9 +112,9 @@
 </p>
 
 <h3>
-<h3 id="Analysis and discussion">Analysis and discussion</h3>
+<h3 id="Mainbody">Main body</h3>
   <p class="ex1">
-<pre>
+<pre id="Mainbody_InText" class="ex1">
   Sensors such as thermal imaging cameras operate based on the principles of infrared radiation. All objects emit electromagnetic radiation which is proportional to their temperature as described by Planck’s law.
   Thermal cameras detect this radiation in the infrared spectrum (which are typically between 8-14 µm) and map it on a temperature map, allowing for UAVs to identify heat anomalies which are typical characteristics of potential fire outbreaks.
   To collect this data, UAVs must overcome the limitations associated to cameras in low visibility conditions and night operations (De Vivo, 2021, para. 2 of abstract).
@@ -168,7 +168,7 @@
 <h3>
 <h3 id="Conclusion">Conclusion</h3>
   <p class="ex1">
-  <pre>
+  <pre id="Conclusion_InText" class="ex1">
   In conclusion, due to recent advancements of autonomous flight systems and UAVS, wildfire monitoring has reached new heights with better levels of accuracy,
   adaptability, and efficiency thanks to technologies such as advanced thermal sensors, swarm coordination, autonomous navigation, machine learning models, and processing algorithms.
   The application of these technologies even extends further than active wildfires to monitor air quality, health of terrain which help assess the long and short-term environmental impacts from residual gases and particulate matter
@@ -191,8 +191,7 @@
   
   </pre>
 </h3>
-
-Total word count = 948
+  
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -265,10 +264,10 @@ Total word count = 948
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisanddiscussionCount = displayWordCount("Analysisanddiscussion_InText");
+    const MainbodyCount = displayWordCount("Mainbody_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisanddiscussionCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + MainbodyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
